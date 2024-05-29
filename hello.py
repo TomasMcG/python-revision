@@ -69,3 +69,54 @@ string2 = "153"
 print(newString + string2)
 #prints after each other
 
+#can convert to int
+intString = int(newString)
+int2 = int(string2)
+print(intString + int2)
+
+stringValue = str(int2)
+print(type(stringValue))
+
+
+
+#put different datatypes together in print
+age = 25
+message = "I am " + str(age) + " years old."
+print(message)  # Output: I am 25 years old.
+
+age = 25
+print("I am", age, "years old.")  # Output: I am 25 years old.
+
+age = 25
+message = "I am %d years old." % age
+print(message)  # Output: I am 25 years old.
+
+age = 25
+message = "I am {} years old.".format(age)
+print(message)  # Output: I am 25 years old.
+
+#String literals
+age = 25
+message = f"I am {age} years old."
+print(message)  # Output: I am 25 years old.
+
+name = "Alice"
+age = 25
+height = 5.6
+
+# Using str() function
+print("Name: " + name + ", Age: " + str(age) + ", Height: " + str(height) + " ft")
+
+
+
+
+#for loops
+my_list = [1, 2, 3, 4, 5] #list
+
+#need number for array
+import numpy as np
+
+my_array = np.array([1, 2, 3, 4, 5])
+#arrays are fixed size and have 1 data type, lists can change and hvae multiple types, arrays have better performance
+#import from pythons standard library
+
