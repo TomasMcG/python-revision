@@ -112,11 +112,35 @@ print("Name: " + name + ", Age: " + str(age) + ", Height: " + str(height) + " ft
 
 #for loops
 my_list = [1, 2, 3, 4, 5] #list
+print(my_list)
 
 #need number for array
+#on command line I did , pip install numpy
 import numpy as np
 
 my_array = np.array([1, 2, 3, 4, 5])
+print(my_array)
 #arrays are fixed size and have 1 data type, lists can change and hvae multiple types, arrays have better performance
 #import from pythons standard library
 
+my_list = [1, 2, 3, 4, 5]
+for num in my_list:
+    print(num)
+
+
+##A tuple in Python is an ordered collection of elements, similar to a list.
+# However, tuples are immutable, meaning once they are created,
+# their elements cannot be changed, added, or removed. Tuples are defined using parentheses ().
+my_tuple = ('a', 'b', 'c', 'd', 'e')
+for letter in my_tuple:
+    print(letter)
+
+my_string = "Hello"
+for char in my_string:
+    print(char)   
+
+for i in range(5):
+    print(i)
+
+
+#revise if and when
