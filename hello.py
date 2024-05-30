@@ -208,3 +208,13 @@ while i < len(thislist):
 thislist = ["apple", "banana", "cherry"]
 for i in range(len(thislist)):
   print(thislist[i]) 
+
+#sort lists
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+
+#sort descending
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)
