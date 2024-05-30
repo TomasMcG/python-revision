@@ -336,3 +336,43 @@ print(x) #before the change
 car["color"] = "white"
 
 print(x) #after the change 
+
+
+#return all dict values
+x = thisdict.values() 
+print(x)
+
+#each pair is a tuple iterator stored in a list
+x = thisdict.items()
+print(x)
+
+#updating the original you need to recall thisdict.item()
+
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.update({"year": 2020}) 
+x = thisdict.items()  #or car["year"] = 2020
+print(x)
+
+#if update item doesn't exist then it is added
+thisdict["color"] = "red"
+thisdict.update({"color": "red"}) 
+
+thisdict.pop("model")#use pop or del with specfiied key name, del thisdict["model"]
+
+
+#looping, all keys, all values
+for x in thisdict:
+  print(thisdict[x]) 
+
+for x in thisdict.values():
+  print(x) 
+
+#key and value below
+for x, y in thisdict.items():
+  print(x, y) 
+
+#dict 2 = dict 1 makes a reference to dict1, change in dict1 will uatomatically be made in dict2
