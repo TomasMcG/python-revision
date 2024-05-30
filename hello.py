@@ -144,3 +144,38 @@ for i in range(5):
 
 
 #revise if and when
+
+#iterator
+mytuple = ("apple", "banana", "cherry")
+myit = iter(mytuple)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+
+
+print(10 > 9)
+print(10 == 9)
+print(10 < 9) 
+
+#first character index 0, slicing strings
+b = "Hello, World!"
+print(b[2:5])  #start at 2, up to but dont include 5
+
+b = "Hello, World!"
+print(b[:5])
+#start to 5
+
+
+
+#more lists
+#append
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)
+
+#insert
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(1, "orange")
+print(thislist)
