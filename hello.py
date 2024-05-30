@@ -179,3 +179,32 @@ print(thislist)
 thislist = ["apple", "banana", "cherry"]
 thislist.insert(1, "orange")
 print(thislist)
+
+#extend combines them
+thislist = ["apple", "banana", "cherry"]
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
+print(thislist)
+
+#remove
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+thislist.remove("banana")
+print(thislist)
+
+#pop at index
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
+
+
+#loop list
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+
+#range is from 0 to specified number
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+  print(thislist[i]) 
