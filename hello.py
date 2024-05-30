@@ -218,3 +218,72 @@ print(thislist)
 thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
 thislist.sort(reverse = True)
 print(thislist)
+
+#count
+fruits = ['apple', 'banana', 'cherry']
+
+x = fruits.count("cherry")
+
+
+#sets
+#A set is a collection which is unordered, unchangeable*, and unindexed.
+#duplicates not allowed
+thisset = {"apple", "banana", "cherry"}
+print(thisset) 
+
+thisset = {"apple", "banana", "cherry", "apple"}
+
+print(thisset)
+#true and 1 are the same, sets can have different data types
+#use len() for length
+thisset = {"apple", "banana", "cherry"}
+
+print(len(thisset)) 
+
+#set() constructor
+thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
+print(thisset) 
+
+#can add, but not change items
+thisset = {"apple", "banana", "cherry"}
+tropical = {"pineapple", "mango", "papaya"}
+
+thisset.update(tropical)
+
+print(thisset) 
+
+#update can add any iterable object like lists, tuples etc
+thisset = {"apple", "banana", "cherry"}
+mylist = ["kiwi", "orange"]
+
+thisset.update(mylist)
+
+print(thisset) 
+
+
+
+#remove
+thisset = {"apple", "banana", "cherry"}
+
+thisset.remove("banana")
+
+print(thisset) 
+
+#loop
+thisset = {"apple", "banana", "cherry"}
+
+for x in thisset:
+  print(x) 
+
+#has union, update, interception .  all different ways of joinging
+
+
+
+
+#dictoaries have key value pairs
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
