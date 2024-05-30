@@ -287,3 +287,52 @@ thisdict =	{
   "year": 1964
 }
 print(thisdict)
+
+#Dictionary items are ordered, changeable, and do not allow duplicates.
+
+#Dictionary items are presented in key:value pairs, and can be referred to by using the key name.
+
+print(thisdict["brand"])
+
+
+#can have multiple data types
+thisdict =	{
+  "brand": "Ford",
+  "electric": False,
+  "year": 1964,
+  "colors": ["red", "white", "blue"]
+} 
+
+#frompython , dictions are objects with data type dict
+
+thisdict = dict(name = "John", age = 36, country = "Norway")
+print(thisdict)
+
+
+
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict["model"]
+#or
+x = thisdict.get("model")
+x = thisdict.keys() 
+print(x)
+
+
+
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.keys()
+
+print(x) #before the change
+
+car["color"] = "white"
+
+print(x) #after the change 
