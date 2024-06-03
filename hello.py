@@ -375,4 +375,15 @@ for x in thisdict.values():
 for x, y in thisdict.items():
   print(x, y) 
 
-#dict 2 = dict 1 makes a reference to dict1, change in dict1 will uatomatically be made in dict2
+#dict 2 = dict 1 makes a reference to dict1, change in dict1 will uatomatically be made in dict2,use .copy()
+#can nest dictionharies as objects in each other
+
+
+
+#using while loops
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is now 6")
